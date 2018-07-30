@@ -3,8 +3,9 @@ Crystal Collector Game:
 1. Create Crystal Collector Game Layout:
 	- Game Title
 	- Game Rules
+    
 	-  Actual Game Display Follows:
-		- Random Number Target Score
+		- Random Number Target Score 
 		- Wins/Losses tracker
 		- Four crystal image options
 		- Total score section
@@ -13,7 +14,7 @@ Crystal Collector Game:
 
 3. Each crystal is assigned a random hidden value between 1-12
 
-4. When a crystal is clicked it adds a specified value to the the user's score
+4. When a crystal is clicked it adds a specified value to the user's score
 
 5. If the user's score matches the target score:
 	- Wins increases by 1
