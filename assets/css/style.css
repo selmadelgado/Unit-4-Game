@@ -14,7 +14,8 @@ h1 {
 
 p {
      line-height:  2em;
-    width= 300px;
+     width: 300px;
+     text-align: left;
 }
 
 .instructions {
@@ -23,4 +24,20 @@ p {
     margin-right: auto;
     margin-top:  32px;
     max-width: 600px;
+}
+
+.crystals {
+         display: flex;
+         justify-content:  space-around;
+         align-items: center;
+}
+
+.crystal {
+         border: 1px solid green;
+         height: 200px;
+         width: 200px;
+}
+
+#result {
+     text-align: left;
 }

@@ -1,22 +1,28 @@
-// Pseudo Code
+Crystal Collector Game:
 
-// A game with 4 Crystals and Random Value/Result 
+1. Create Crystal Collector Game Layout:
+	- Game Title
+	- Game Rules
+	-  Actual Game Display Follows:
+		- Random Number Target Score
+		- Wins/Losses tracker
+		- Four crystal image options
+		- Total score section
+        
+2. The random number target is set to a random number between 19-120
 
-// The player is shown a random number and four crystals displayed as buttons on the page.
+3. Each crystal is assigned a random hidden value between 1-12
 
-// The random number at the start of the game is between 19-120
+4. When a crystal is clicked it adds a specified value to the the user's score
 
-// Each crystal has a random value between 1-12.
+5. If the user's score matches the target score:
+	- Wins increases by 1
+	- The values of the crystals are randomly reassigned
+	- The target score is set to a different random number
+	- The user score is set back to 0
 
-// A new random number is generated and assigned to each crystal 
-everytime we win or lose
-
-// When the player clicks on a crystal, the player's score counter is updated with that value until the total score is matches or exceeds the random number.
-
-// If the total score equals the random number, increment the win counter.
-
-// The player loses if their score goes above the random number.
-
-// The game restarts whenever the player wins or loses.
-
-//The app keeps track of and shows the number of games the player wins and loses.
+6. If the user's score exceeds the target score:
+	- Losses increases by 1
+	- The values of the crystals are randomly reassigned
+	- The target score is set to a different random number
+	- The user score is set back to 0
