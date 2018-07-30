@@ -43,7 +43,7 @@ for (var i = 0;  i < 4;  i++ ) {
                   });
          
          $(".crystals").append(crystal); // pipe divs into container
-         console.log( "Hello, Leo!");       
+        // console.log( "Hello, Leo!");       
 }
 
 
@@ -57,10 +57,18 @@ $(".crystal").on('click', function() {
                     
                     previous_score += num;
      
-                    console.log(previous_score);
+                         //  
+                         if (previous_score > random_result ) {
+                               console.log("Sorry, you lost!!");
+                            }
      
-          //Run tests
-        // console log the value of the one we clicked on - aka 'this'. 
-           console.log("The Crystal Value is: " + ($(this).attr('data-random'))); 
+                         else if (previous_score === random_result ){
+                               console.log("Awesome, You Win!!");
+                         }
+     
+     
+          //Run tests:  // console log the value of the one we clicked on - aka 'this'. 
+            console.log("The Crystal Value is: " + ($(this).attr('data-random'))); 
+            console.log("The Running Total is: " + previous_score);
 });
 
