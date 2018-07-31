@@ -51,27 +51,26 @@ var resetAndStartGame = function() {
                         $(".crystals").append(crystal); // pipe divs into container
                        // console.log( "Hello, Leo!");       
                }
+        $("#previous_score").html(previous_score);   //Add previous score to DOM
 }
 
 resetAndStartGame(); // Invoke function when the page loads
 
 
-// Update DOM when a crystal is clicked and add the specified value to  user's score
-//$(".crystal").on('click', function() {
-
-// Event Delegation
+// EVENT DELEGATION
+//When the page loads  - resetAndStartGameFunction is invoked,  crystals is set to empty at Line 23 and a new element is created in the DOM
+//Listen to the DOM,  after the click button, pass the incoming element or element that was there.
 $(document).on('click', ".crystal", function () {
      
      
-     
-     
-     
-     
-     
+// Update DOM when a crystal is clicked and add the specified value to  user's score
 //  Value for the button  we clicked on - aka 'this'.  Add 'data-random to pipe in data from -data-random on line 24.  Wrap in parseInt to convert string into number.
                     var num = parseInt($(this).attr('data-random'));  
                     
                     previous_score += num;
+     
+                    $("#previous_score").html(previous_score);   //Add previous score to DOM
+                   
      
                          // End game conditions 
                          if (previous_score > random_result ) {
