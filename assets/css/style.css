@@ -19,7 +19,7 @@ h1 {
 
 p {
      line-height:  1.5em;
-     width: 800px;
+    /* width: 800px; */
 }
 
 .instructions {
@@ -52,6 +52,6 @@ img {
 }
 
 #instructions {
-     max-width: 900px;
+    /* max-width: 900px; */
      text-align: center;
 }
