@@ -23,10 +23,10 @@ var resetAndStartGame = function() {
           $(".crystals").empty(); //clear crystal values when the game starts
      
                var images = [
-                  '../assets/images/ice-cubes-UT-orange.png ',
-                    '../assets/images/ice-cubes-purple.png ',
-                  '../assets/images/ice-cubes-hot-pink.png ',
-                      '../assets/images/ice-cubes-blue.png ', ];
+                  'assets/images/ice-cubes-UT-orange.png ',
+                    'assets/images/ice-cubes-purple.png ',
+                  'assets/images/ice-cubes-hot-pink.png ',
+                      'assets/images/ice-cubes-blue.png ', ];
           
      
                     // Create Random Result
