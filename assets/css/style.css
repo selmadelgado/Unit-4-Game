@@ -6,12 +6,15 @@ body {
     line-height: 2.5em;
      background: url("../images/watercolor-drink-vector.png");
      background-repeat: no-repeat;
+     background-position: center top; 
+     width: 60%;
 }
 
 h1 {
     font-size: 30px;
     margin: 20px;
      line-height:  1.5em;
+     font-weight: 300;
 }
 
 p {
@@ -34,7 +37,7 @@ p {
 }
 
 .crystal {
-         border: 1px solid green;
+         border: 1px solid gray;
          height: 200px;
          width: 200px;
 }
