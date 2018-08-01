@@ -109,19 +109,3 @@ $(document).on('click', ".crystal", function () {
             console.log("The Running Total is: " + previous_score);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
