@@ -21,6 +21,12 @@ var losses = 0;
 var resetAndStartGame = function() {
      
           $(".crystals").empty(); //clear crystal values when the game starts
+     
+               var images = [
+                  '../assets/images/ice-cubes-UT-orange.png ',
+                    '../assets/images/ice-cubes-purple.png ',
+                  '../assets/images/ice-cubes-hot-pink.png ',
+                      '../assets/images/ice-cubes-blue.png ', ];
           
      
                     // Create Random Result
@@ -28,7 +34,7 @@ var resetAndStartGame = function() {
                console.log("The Random Number is: " + random_result); // Check via the console
 
                     // display Random Result in the DOM
-                    $("#result").html('Magic Number:    ' + random_result ); 
+                    $("#result").html('MAGIC NUMBER:    ' + random_result ); 
 
 
 
@@ -45,13 +51,19 @@ var resetAndStartGame = function() {
                                           "class": 'crystal',
                                           "data-random": random
                                  });
+                    
+                                   crystal.css({
+                                      "background-image":"url('" + images[i] + "')",
+				                     "background-size":"cover"
+                                     //   "background": "red"
+                                   });
 
-                              crystal.html(random);  // for testing purposes display random value in box  HIDEME!!
+                              //crystal.html(random);  // for testing purposes display random value in box  HIDEME!!
 
                         $(".crystals").append(crystal); // pipe divs into container
                        // console.log( "Hello, Leo!");       
                }
-        $("#previous_score").html("Total Score:  " +  previous_score);   //Add previous score to DOM
+        $("#previous_score").html("TOTAL SCORE :  " +  previous_score);   //Add previous score to DOM
 }
 
 resetAndStartGame(); // Invoke function when the page loads
@@ -69,7 +81,7 @@ $(document).on('click', ".crystal", function () {
                     
                     previous_score += num;
      
-                     $("#previous_score").html("Total Score:  " +  previous_score);   //Add previous score to DOM
+                     $("#previous_score").html("TOTAL SCORE:  " +  previous_score);   //Add previous score to DOM
                    
      
                          // End game conditions 
@@ -77,7 +89,7 @@ $(document).on('click', ".crystal", function () {
                               losses ++ ; //increment loses
                                 console.log("Sorry, you lost!!");
                              
-                               $("#losses").html("Losses: " + losses); //Display losses on the DOM
+                               $("#losses").html("LOSSES: " + losses); //Display losses on the DOM
                               previous_score = 0;   //reset score to zero
                               resetAndStartGame();  //run function again
                             }
@@ -86,7 +98,7 @@ $(document).on('click', ".crystal", function () {
                               wins ++ ;  //increment wins
                                console.log("Awesome, You Win!!");
                               
-                              $("#wins").html("Wins: " + wins); // Display wins on the DOM
+                              $("#wins").html("WINS: " + wins); // Display wins on the DOM
                               previous_score = 0;  // reset score to zero
                               resetAndStartGame();  // run function again
                          }

@@ -4,6 +4,7 @@ body {
     margin-right: auto;
     font-family: 'Raleway', sans-serif;
     line-height: 2.5em;
+     background: url("../images/watercolor-drink-vector.png");
 }
 
 h1 {
@@ -39,4 +40,9 @@ p {
 
 #result {
      text-align: left;
+}
+
+img {
+     width:  185px;
+     height: 1850px;
 }
