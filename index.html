@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
 
       <!--Responsive Mobile Meta Tag-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
    
     <!--Reset, CSS,  -->
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -20,18 +20,25 @@
   <body>
     
     <h1>ICE CRYSTALS COLLECTOR </h1>
-           <br>
+       <p id="instructions">Each crystal has a hidden value that is revealed when clicked.  The crystal's value is added to the total score when cliced.  If your total score matches the magic number - you win!  If your total score exceeds it, you lose. <br> Good luck!</p>
+     
+       
            <p id="result"></p>
        
+       <div class="container">
           <p id="previous_score"></p>
           <p id="wins"></p>
           <p id="losses"></p>
            <br>
        
            <div class="crystals">
-           </div>
-       
+            </div>
+            
+       </div>
       
+       
+       
+       
       <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
