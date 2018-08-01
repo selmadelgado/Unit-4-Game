@@ -28,7 +28,7 @@ var resetAndStartGame = function() {
                console.log("The Random Number is: " + random_result); // Check via the console
 
                     // display Random Result in the DOM
-                    $("#result").html('Lucky Number:    ' + random_result ); 
+                    $("#result").html('Magic Number:    ' + random_result ); 
 
 
 
@@ -51,7 +51,7 @@ var resetAndStartGame = function() {
                         $(".crystals").append(crystal); // pipe divs into container
                        // console.log( "Hello, Leo!");       
                }
-        $("#previous_score").html(previous_score);   //Add previous score to DOM
+        $("#previous_score").html("Total Score:  " +  previous_score);   //Add previous score to DOM
 }
 
 resetAndStartGame(); // Invoke function when the page loads
@@ -69,7 +69,7 @@ $(document).on('click', ".crystal", function () {
                     
                     previous_score += num;
      
-                    $("#previous_score").html(previous_score);   //Add previous score to DOM
+                     $("#previous_score").html("Total Score:  " +  previous_score);   //Add previous score to DOM
                    
      
                          // End game conditions 
@@ -77,7 +77,7 @@ $(document).on('click', ".crystal", function () {
                               losses ++ ; //increment loses
                                 console.log("Sorry, you lost!!");
                              
-                               $("#losses").html(losses); //Display losses on the DOM
+                               $("#losses").html("Losses: " + losses); //Display losses on the DOM
                               previous_score = 0;   //reset score to zero
                               resetAndStartGame();  //run function again
                             }
@@ -86,7 +86,7 @@ $(document).on('click', ".crystal", function () {
                               wins ++ ;  //increment wins
                                console.log("Awesome, You Win!!");
                               
-                              $("#wins").html(wins); // Display wins on the DOM
+                              $("#wins").html("Wins: " + wins); // Display wins on the DOM
                               previous_score = 0;  // reset score to zero
                               resetAndStartGame();  // run function again
                          }
