@@ -63,7 +63,7 @@ var resetAndStartGame = function() {
                         $(".crystals").append(crystal); // pipe divs into container
                        // console.log( "Hello, Leo!");       
                }
-        $("#previous_score").html("TOTAL SCORE :  " +  previous_score);   //Add previous score to DOM
+        $("#previous_score").html("CURRENT GAME SCORE :    " +  previous_score);   //Add previous score to DOM
 }
 
 resetAndStartGame(); // Invoke function when the page loads
@@ -81,7 +81,7 @@ $(document).on('click', ".crystal", function () {
                     
                     previous_score += num;
      
-                     $("#previous_score").html("TOTAL SCORE:  " +  previous_score);   //Add previous score to DOM
+                     $("#previous_score").html("CURRENT GAME SCORE:    " +  previous_score);   //Add previous score to DOM
                    
      
                          // End game conditions 
